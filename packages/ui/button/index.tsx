@@ -1,7 +1,8 @@
 import React from "react";
+import { ButtonProps } from "./button.types";
 
-export const Button = ({ children, ...props }: any) => {
-  const { className, styleType, ...rest } = props;
+export const Button = ({ children, ...props }: ButtonProps) => {
+  const { className, styleType } = props;
 
   const customClass = `${className || ""} ${
     CLASSES.find((c) => c.name === styleType)?.className

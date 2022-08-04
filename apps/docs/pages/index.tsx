@@ -11,8 +11,12 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <Button styleType="primary" onClick={() => alert("Hello!")}>
-          Hello World
+        <Button
+          styleType="primary"
+          className="transition duration-500 ease-in-out"
+          onClick={() => alert("Hello!")}
+        >
+          Hello World!
         </Button>
       </main>
     </div>
