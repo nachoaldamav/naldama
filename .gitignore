@@ -4,3 +4,4 @@ build/**
 dist/**
 .next/**
 packages/**/node_modules
+packages/**/dist/**
