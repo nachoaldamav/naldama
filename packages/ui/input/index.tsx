@@ -1,12 +1,20 @@
 import React from "react";
 import { InputProps } from "./input.types";
 
-const colors = {
-  primary: "rounded-lg w-full px-3 py-1",
+const base = "rounded-lg w-fit px-3 py-1";
+
+const colors: any = {
+  primary: "border-2 border-blue-500",
+  secondary: "border-2 border-gray-300",
 };
 
-export const Input = ({ className, styleType, ...props }: InputProps) => {
-  const createClassname = `${colors.primary} ${className || ""}`;
+export const Input = ({
+  className,
+  styleType = "primary",
+  ...props
+}: InputProps) => {
+  const color: string = colors[styleType];
+  const createClassname = `${base} ${color} ${className || ""}`;
 
   return (
     <input

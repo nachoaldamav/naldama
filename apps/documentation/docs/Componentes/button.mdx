@@ -1,0 +1,25 @@
+---
+title: Button
+description: Naldama button component
+---
+import Example from './_buttonComponent.mdx';
+
+# Button
+
+```jsx
+import { Button } from "ui"
+
+<Button styleType="primary" className="w-fit transition" onClick={() => alert("Hello world!")}>
+        ¡Este botón es un componente hecho con MDX!
+</Button>
+```
+### Ejemplo
+
+<Example />
+
+### Parámetros
+- `styleType` - "primary" | "secondary" | "success" | "danger" | "warning" | "info" | "light" | "dark"
+- `className` - Clases personalizadas, sobreescriben las clases de la misma utilidad.
+- `type` - button | submit | reset
+- `onClick` - Función del botón.
+- `disabled` - `true` o `false` para desactivar o activar el botón.

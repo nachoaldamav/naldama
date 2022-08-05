@@ -6,7 +6,7 @@ export const Button = ({ children, ...props }: ButtonProps) => {
 
   const customClass = `${className || ""} ${
     CLASSES.find((c) => c.name === styleType)?.className
-  }`;
+  } ${props.disabled ? "cursor-not-allowed" : ""}`;
 
   return (
     <button onClick={props.onClick} className={customClass}>
@@ -24,7 +24,7 @@ const CLASSES = [
   {
     name: "secondary",
     className:
-      "bg-white hover:bg-gray-600 text-black font-bold py-2 px-4 rounded-lg border border-gray-300",
+      "bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded-lg border border-gray-300",
   },
   {
     name: "success",

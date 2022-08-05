@@ -1,0 +1,22 @@
+import {Button} from "ui"
+
+<div className="w-full flex flex-col gap-3 justify-center items-center">
+    <Button styleType="primary" className="w-fit transition duration-150 ease-in-out" onClick={() => {
+        alert("Hello world!")
+    }}>
+        ¡Este botón es un componente hecho con MDX!
+    </Button>
+    <Button styleType="secondary" className="w-fit transition duration-150 ease-in-out" onClick={() => {
+        alert("Hello world!")
+    }}>
+        ¡Este botón es un componente hecho con MDX!
+    </Button>
+    <Button styleType="danger" className="w-fit transition duration-150 ease-in-out" onClick={() => {
+        alert("Hello world!")
+    }}>
+        ¡Este botón es un componente hecho con MDX!
+    </Button>
+    <Button styleType="primary" className="w-fit transition duration-150 ease-in-out opacity-70" disabled={true}>
+        ¡Este botón es un componente hecho con MDX!
+    </Button>
+</div>
