@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Button } from "ui";
+import { Button, Input } from "ui";
 
 const Home: NextPage = () => {
   return (
@@ -12,12 +12,17 @@ const Home: NextPage = () => {
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <Button
-          styleType="primary"
+          styleType="success"
           className="transition duration-500 ease-in-out"
           onClick={() => alert("Hello!")}
         >
           Hello World!
         </Button>
+        <Input
+          type="text"
+          placeholder="Type something..."
+          className="border-2 border-blue-700 mt-2"
+        />
       </main>
     </div>
   );
