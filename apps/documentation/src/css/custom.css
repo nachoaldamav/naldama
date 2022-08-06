@@ -5,7 +5,10 @@ button {
 }
 
 input {
-  border-width: inherit;
+  @apply border-solid;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 @tailwind components;

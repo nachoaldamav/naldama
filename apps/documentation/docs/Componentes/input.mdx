@@ -9,9 +9,13 @@ import Example from "./_inputComponent.mdx"
 ```jsx
 import { Input } from "ui"
 
-let value = "";
-
-<Input styleType="primary" type="text" className="w-fit" onChange={(e) => value = e.target.value)} />
+<Input
+    className="w-full"
+    id="test_input"
+    placeholder="Introduce tu nombre"
+    value={name}
+    onChange={(e) =>setName(e.target.value)}
+/>
 ```
 
 ### Ejemplos
