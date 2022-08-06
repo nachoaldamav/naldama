@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Input } from "ui";
+import { Input } from "naldama-ui";
 
 export default function FormExample() {
   const [name, setName] = useState("");

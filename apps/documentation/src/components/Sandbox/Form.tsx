@@ -1,5 +1,7 @@
 import React from "react";
 import { Sandpack } from "@codesandbox/sandpack-react";
+import { nightOwl } from "@codesandbox/sandpack-themes";
+
 import {
   BASE_STYLE,
   POSTCSS_CONFIG,
@@ -53,7 +55,7 @@ export default function FormExample() {
 export default function Form() {
   return (
     <Sandpack
-      theme={"dark"}
+      theme={nightOwl}
       template="react"
       files={{
         "/App.js": code,
