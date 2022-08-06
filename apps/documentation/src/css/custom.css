@@ -44,3 +44,8 @@ input {
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+@font-face {
+  font-family: CascadiaCode;
+  src: url("/fonts/cascadia/CascadiaCode.woff2") format("woff2");
+}
