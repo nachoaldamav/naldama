@@ -40,7 +40,7 @@ var CLASSES = [
 import React2 from "react";
 var base = "rounded-lg w-fit px-3 py-1";
 var colors = {
-  primary: "border-2 border-blue-500",
+  primary: "border-2",
   secondary: "border-2 border-gray-300"
 };
 var Input = ({

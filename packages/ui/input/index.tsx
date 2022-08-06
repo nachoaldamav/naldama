@@ -4,7 +4,7 @@ import { InputProps } from "./input.types";
 const base = "rounded-lg w-fit px-3 py-1";
 
 const colors: any = {
-  primary: "border-2 border-blue-500",
+  primary: "border-2",
   secondary: "border-2 border-gray-300",
 };
 
