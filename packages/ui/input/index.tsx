@@ -7,6 +7,7 @@ const colors: any = {
   primary: "border-2 focus:border-blue-500",
   secondary: "border-2 border-gray-300",
   success: "border-2 border-green-500",
+  test: "test",
 };
 
 export const Input = ({
