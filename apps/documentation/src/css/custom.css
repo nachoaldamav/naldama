@@ -11,6 +11,10 @@ input {
   -moz-appearance: none;
 }
 
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
 @tailwind components;
 @tailwind utilities;
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "ui";
+import { Button } from "naldama-ui";
 
 const CustomButton = ({ children, styleType, ...props }) => {
   return (

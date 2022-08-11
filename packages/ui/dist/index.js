@@ -70,23 +70,32 @@ var CLASSES = [
 
 // input/index.tsx
 var import_react2 = __toESM(require("react"));
-var base = "rounded-lg w-fit px-3 py-1";
+var base = "rounded-lg w-fit px-3 py-1 bg-transparent focus:outline-none";
 var colors = {
-  primary: "border-2",
+  primary: "border-2 focus:border-blue-500",
   secondary: "border-2 border-gray-300"
 };
 var Input = ({
   className,
   styleType = "primary",
+  type = "text",
   ...props
 }) => {
   const color = colors[styleType];
   const createClassname = `${base} ${color} ${className || ""}`;
-  return /* @__PURE__ */ import_react2.default.createElement("input", {
-    type: props.type || "text",
+  const [changeType, setChangeType] = (0, import_react2.useState)(type);
+  return /* @__PURE__ */ import_react2.default.createElement("div", {
+    className: "relative"
+  }, /* @__PURE__ */ import_react2.default.createElement("input", {
+    type: changeType,
     className: createClassname,
     ...props
-  });
+  }), type === "password" && /* @__PURE__ */ import_react2.default.createElement("span", {
+    className: "absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 cursor-pointer",
+    onClick: () => {
+      setChangeType(changeType === "text" ? "password" : "text");
+    }
+  }, type === "password" ? "\u{1F512}" : "\u{1F50D}"));
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

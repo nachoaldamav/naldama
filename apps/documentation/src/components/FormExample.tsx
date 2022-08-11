@@ -27,7 +27,7 @@ export default function FormExample() {
         }}
       />
       <Input
-        className="w-1/2"
+        className="w-full"
         placeholder="Contraseña"
         styleType="primary"
         type="password"
