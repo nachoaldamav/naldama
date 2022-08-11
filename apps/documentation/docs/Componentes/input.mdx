@@ -2,23 +2,24 @@
 title: Input
 description: Naldama input component
 ---
-import Example from "./_inputComponent.mdx"
+
+import Example from "./_inputComponent.mdx";
 
 # Input
 
 ```jsx
-import { Input } from "ui"
+import { Input } from "ui";
 
 <Input
-    className="w-full"
-    id="test_input"
-    placeholder="Introduce tu nombre"
-    value={name}
-    onChange={(e) =>setName(e.target.value)}
-/>
+  className="w-full"
+  placeholder="Introduce tu nombre"
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+/>;
 ```
 
 ### Ejemplos
+
 <Example />
 
 ### Parámetros
@@ -27,8 +28,6 @@ import { Input } from "ui"
 - `type`: Tipo de input. Por defecto `text`.
 - `className`: Clase del componente.
 - `onChange`: Función que se ejecuta al cambiar el valor del input.
-- `onBlur`: Función que se ejecuta al perder el foco del input.
-- `onFocus`: Función que se ejecuta al tener el foco del input.
 - `value`: Valor del input.
 - `placeholder`: Texto que se muestra en el input.
 - `disabled`: Si el input está deshabilitado.

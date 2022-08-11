@@ -2,22 +2,29 @@
 title: Button
 description: Naldama button component
 ---
-import Example from './_buttonComponent.mdx';
+
+import Example from "./_buttonComponent.mdx";
 
 # Button
 
 ```jsx
-import { Button } from "ui"
+import { Button } from "ui";
 
-<Button styleType="primary" className="w-fit transition" onClick={() => alert("Hello world!")}>
-        ¡Este botón es un componente hecho con MDX!
-</Button>
+<Button
+  styleType="primary"
+  className="w-fit transition"
+  onClick={() => alert("Hello world!")}
+>
+  ¡Este botón es un componente hecho con MDX!
+</Button>;
 ```
-### Ejemplo
+
+### Ejemplos
 
 <Example />
 
 ### Parámetros
+
 - `styleType` - "primary" | "secondary" | "success" | "danger" | "warning" | "info" | "light" | "dark"
 - `className` - Clases personalizadas, sobreescriben las clases de la misma utilidad.
 - `type` - button | submit | reset
