@@ -6,6 +6,7 @@ const base = "rounded-lg w-fit px-3 py-1 bg-transparent focus:outline-none";
 const colors: any = {
   primary: "border-2 focus:border-blue-500",
   secondary: "border-2 border-gray-300",
+  success: "border-2 border-green-500",
 };
 
 export const Input = ({
