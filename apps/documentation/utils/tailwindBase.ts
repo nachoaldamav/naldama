@@ -1,13 +1,14 @@
 export const TAILWIND_BASE = `module.exports = {
     content: [
       "./App.js",
-      "../../node_modules/naldama-ui/**/*.{js,ts,jsx,tsx}",
-      "../../node_modules/naldama-ui/dist/index.js",
+      "/node_modules/naldama-ui/dist/index.js",
     ],
     theme: {
       extend: {},
     },
-    plugins: [],
+    plugins: [
+      require('@tailwindcss/forms'),
+    ],
   };`;
 
 export const POSTCSS_CONFIG = `
@@ -21,4 +22,9 @@ module.exports = {
 export const BASE_STYLE = `
 @tailwind base;
 @tailwind components;
-@tailwind utilities;`;
+@tailwind utilities;
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+`;
