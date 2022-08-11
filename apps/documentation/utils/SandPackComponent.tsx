@@ -3,6 +3,7 @@ import {
   SandpackLayout,
   SandpackPreview,
   SandpackProvider,
+  Sandpack,
 } from "@codesandbox/sandpack-react";
 import {
   BASE_STYLE,
@@ -13,7 +14,7 @@ import MonacoEditor from "./MonacoEditor";
 
 export default function SandpackTemplate({ code }) {
   return (
-    <SandpackProvider
+    <Sandpack
       theme={{
         colors: {
           surface1: "#011627",
@@ -76,11 +77,6 @@ export default function SandpackTemplate({ code }) {
           "@tailwindcss/forms": "latest",
         },
       }}
-    >
-      <SandpackLayout>
-        <MonacoEditor defaultCode={code} />
-        <SandpackPreview customStyle={{ height: "100vh" }} />
-      </SandpackLayout>
-    </SandpackProvider>
+    />
   );
 }
