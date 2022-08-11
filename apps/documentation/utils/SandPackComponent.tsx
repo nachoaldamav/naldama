@@ -70,7 +70,7 @@ export default function SandpackTemplate({ code }) {
           react: "18",
           "react-dom": "18",
           "react-scripts": "4.0.0",
-          "naldama-ui": "0.0.32",
+          "naldama-ui": "latest",
           tailwindcss: "^3.1.7",
           autoprefixer: "^10.4.8",
           postcss: "^8.4.14",
