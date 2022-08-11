@@ -1,16 +1,10 @@
 import React from "react";
-import {
-  SandpackLayout,
-  SandpackPreview,
-  SandpackProvider,
-  Sandpack,
-} from "@codesandbox/sandpack-react";
+import { Sandpack } from "@codesandbox/sandpack-react";
 import {
   BASE_STYLE,
   POSTCSS_CONFIG,
   TAILWIND_BASE,
 } from "@site/utils/tailwindBase";
-import MonacoEditor from "./MonacoEditor";
 
 export default function SandpackTemplate({ code }) {
   return (
